@@ -6,10 +6,10 @@ azul="\e[34m"
 roxo="\e[38;2;128;0;128m"
 reset="\e[0m"
 
-rm -rf /root/checkuser/
+rm -rf /root/checuser/
 rm -f /usr/local/bin/iniciar
 sudo kill -9 $(lsof -t -i:5454)
-pkill -9 -f "/root/checkuser/checkuser.py"
+pkill -9 -f "/root/checuser/checkuser.py"
 
 
 apt update && apt upgrade -y && apt install python3 git -y
